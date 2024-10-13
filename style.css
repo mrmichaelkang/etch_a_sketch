@@ -1,0 +1,15 @@
+*{
+  font-family: Poppins;
+  color: #005C78;
+}
+
+.container {
+  max-width: fit-content;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+/*.square:hover {
+  background-color: indianred;
+}
+*/
