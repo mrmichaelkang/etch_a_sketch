@@ -2,6 +2,7 @@
   font-family: Poppins;
   color: #005C78;
   letter-spacing: 5px;
+  box-sizing: border-box;
 }
 
 .container {

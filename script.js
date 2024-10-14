@@ -22,6 +22,8 @@ resetButton.style.color = "#F3F7EC";
 //gridButton.textContent = "New Grid";
 
 resetButton.addEventListener("click", (e) => {
+  container.style.width = `${width}px`;
+  container.style.height = `${height}px`;
   removeGrid();
   generateGrid();
 });
@@ -35,6 +37,7 @@ controlContainer.appendChild(resetButton);
 mainContainer.style.display = "flex";
 mainContainer.style.justifyContent = "space-around";
 mainContainer.style.padding = "50px 250px";
+mainContainer.style.margin = "0 auto";
 
 infoContainer.style.border = "1px solid black";
 infoContainer.style.width = "400px";
@@ -87,9 +90,9 @@ function generateGrid() {
       square.classList.add("square");
       square.style.width = `${width / gridSize}px`;
       square.style.height = `${height / gridSize}px`;
-      square.style.border = "1px solid black";
-      square.style.borderRadius = "15px";
-      square.style.margin = "1px";
+      square.style.border = "1px solid gray";
+      square.style.borderRadius = "100px";
+      //square.style.margin = "1px";
 
       square.addEventListener("mouseenter", (e) => {
         e.target.style.backgroundColor = "#E88D67";
@@ -103,7 +106,10 @@ function generateGrid() {
 
   body.appendChild(header);
   body.appendChild(controlContainer);
-  mainContainer.appendChild(infoContainer);
+  //mainContainer.appendChild(infoContainer);
+  container.style.width = `${width}px`;
+  container.style.height = `${height}px`;
+  //container.style.border = "1px solid gray";
   mainContainer.appendChild(container);
   body.appendChild(mainContainer);
 }
