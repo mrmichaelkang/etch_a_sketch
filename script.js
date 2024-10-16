@@ -92,10 +92,11 @@ function generateGrid() {
       square.style.height = `${height / gridSize}px`;
       square.style.border = "1px solid gray";
       square.style.borderRadius = "100px";
+      //square.style.opacity = "0";
       //square.style.margin = "1px";
 
       square.addEventListener("mouseenter", (e) => {
-        e.target.style.backgroundColor = "#E88D67";
+        e.target.style.backgroundColor = "rgba(232, 141, 103, 1)"; //"#E88D67";
       });
 
       row.appendChild(square);
